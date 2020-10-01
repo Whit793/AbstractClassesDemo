@@ -4,7 +4,17 @@ using System.Text;
 
 namespace ConsoleUI
 {
-    class Car
+    public class Car : Vehicle
     {
+        public Car()
+        {
+        }
+
+        public bool HasTrunk { get; set; } = true;
+        public override void DriveAbstract()
+        {
+            Console.WriteLine("This car is driving");
+        }
+
     }
 }
